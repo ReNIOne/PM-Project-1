@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index_stylesheet.css">
+    <link rel="stylesheet" href="styles/sliders_stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+</head>
+<body>
+<!-- Верхнее меню -->
+<div class="menu__wrapper">
+    <div class="topMenu">
+        <a href="#menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="15" viewBox="0 0 32 15"><path fill="#ff6837" fill-rule="evenodd" id="меню" class="cls-1" d="M338,13h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V14A1,1,0,0,1,338,13Zm0,6h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V20A1,1,0,0,1,338,19Zm0,6h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V26A1,1,0,0,1,338,25Z" transform="translate(-337 -13)"/></svg>
+            <span>Меню</span>
+        </a>
+        <ul id="menu"><button><a href="#">X</a></button></ul>
+    </div>
+</div>
+<div class="wrapper">
+    <!--Блок "Header"-->
+    <header class="header">
+        <div class="header__top-part">
+            <div class="header__top-part__region">Ваш регион: <span class="dotted">Выберите</span></div>
+            <div class="header__top__part__login"><a href="#">Вход</a> / <a href="#">Регистрация</a></div>
+        </div>
+        <div class="header__main-part">
+            <div class="header__main-part__slogan"><a href="index.html" class="header__main-part__slogan__link">HO<span class="my_bg">MY</span>RU</a><br>
+                <span class="slogan">ОБОРУДОВАНИЕ И РЕШЕНИЯ ДЛЯ VOIP</span></div>
+            <div class="header__main-part__contacts">
+                <img class="cloud" src="images/cloud.png" alt="callback">
+                <div class="callback">
+                    <a href="#">ОБРАТНЫЙ<br>ЗВОНОК</a>
+                </div>
+                <span class="phone_number">+7 495 2-55-44-66</span><br>
+                <span class="smaller work-hours">(пн-пт с 9 до 18ч)</span><br>
+                <div class="small__images">
+                    <img src="images/whatsapp_icon.png" alt="whatsapp icon">
+                    <img src="images/viber_icon.png" alt="viber icon">
+                    <span class="smaller">&nbsp+7 903 111-11-11</span>
+                </div>
+                <a href="#"><span class="smaller">info@homy.ru</span></a>
+            </div>
+            <div class="header__main-part__search">
+                <div class="header__main-part__search__text">
+                    <img src="images/rub.png" alt="rub">
+                    <span class="orange">VOIP РЕШЕНИЯ</span> <br>ДЛЯ ЭКОНОМНЫХ ЛЮДЕЙ
+                </div>
+                <form>
+                    <label><input type="text" placeholder="Поиск по сайту" class="input"></label>
+                    <button class="button">искать</button>
+                </form>
+            </div>
+            <div class="header__main-part__search-icon">
+                <img src="images/search.svg" alt="search_icon">
+            </div>
+            <div class="header__main-part__cart">
+                <a href="#"><div class="header__main-part__cart__cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.4 495.4" width="512" height="512" class="svg replaced-svg"><path d="M185 381.5c-22.9 0-41.4 18.5-41.4 41.4 0 22.9 18.5 41.4 41.4 41.4 22.8 0 41.4-18.5 41.4-41.4C226.4 400 207.9 381.5 185 381.5z"></path><path d="M365.6 381.5c-22.9 0-41.4 18.5-41.4 41.4 0 22.9 18.5 41.4 41.4 41.4 22.8 0 41.4-18.5 41.4-41.4C407 400 388.5 381.5 365.6 381.5z" class="a"></path><path d="M469.6 154.7l-229.2 0c-11.5 0-20.7 9.3-20.7 20.8s9.3 20.8 20.8 20.8l202.8 0 -12.9 43.5 -206.2 0c-10.6 0-19.2 8.6-19.2 19.3 0 10.6 8.6 19.3 19.3 19.3l194.8 0.1 -12.1 40.7H174.5L159 196.2 144.3 76.5c-1.2-9.5-8.1-17.3-17.3-19.6l-98-25C16.6 28.7 3.9 36.2 0.7 48.6s4.3 25.1 16.8 28.3l82.7 21.1 32.2 241.6c0 0 1.1 28.2 26.7 28.2h256.8c21.5 0 25.7-22.4 25.7-22.4l50.9-151.2C492.4 194.2 507.5 154.7 469.6 154.7z"></path></svg>
+                    <p>КОРЗИНА</p>
+                    <p id="cart-items-value"><span id="items"></span> / <span id="value"></span> <span id="currency"></span></p>
+                </div></a>
+                <p class="header__main-part__cart__fav-match">
+                    <a href="#" id="chosen"><img src="images/heart_icon.jpg" alt="chosen icon"> Избранное 7</a>
+                    <a href="#"><img src="images/compares_icon.jpg" alt="compares icon"> Сравенние 2</a>
+                </p>
+            </div>
+            <div class="header__main-part__mobile-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.4 495.4" width="512" height="512" class="svg replaced-svg"><path d="M185 381.5c-22.9 0-41.4 18.5-41.4 41.4 0 22.9 18.5 41.4 41.4 41.4 22.8 0 41.4-18.5 41.4-41.4C226.4 400 207.9 381.5 185 381.5z"></path><path d="M365.6 381.5c-22.9 0-41.4 18.5-41.4 41.4 0 22.9 18.5 41.4 41.4 41.4 22.8 0 41.4-18.5 41.4-41.4C407 400 388.5 381.5 365.6 381.5z" class="a"></path><path d="M469.6 154.7l-229.2 0c-11.5 0-20.7 9.3-20.7 20.8s9.3 20.8 20.8 20.8l202.8 0 -12.9 43.5 -206.2 0c-10.6 0-19.2 8.6-19.2 19.3 0 10.6 8.6 19.3 19.3 19.3l194.8 0.1 -12.1 40.7H174.5L159 196.2 144.3 76.5c-1.2-9.5-8.1-17.3-17.3-19.6l-98-25C16.6 28.7 3.9 36.2 0.7 48.6s4.3 25.1 16.8 28.3l82.7 21.1 32.2 241.6c0 0 1.1 28.2 26.7 28.2h256.8c21.5 0 25.7-22.4 25.7-22.4l50.9-151.2C492.4 194.2 507.5 154.7 469.6 154.7z"></path></svg>
+                <img src="images/search.svg" alt="search icon">
+            </div>
+            <div class="header__main-part__skype-mail">
+                <p><a href="#">info@homy.ru</a></p><br>
+                <p class="skype-float__text">skype-on.06</p>
+                <img class="skype-float" src="images/skype_icon.png" alt="skype icon">
+            </div>
+        </div>
+    </header>
+    <!--Товары-->
+    <section class="products"></section>
+    <!--Блок новости+слайдер+крутой текст-->
+    <section class="news-and-slider">
+        <!--Левая часть -->
+        <div class="news-section">
+            <h4 class="news_header">НОВОСТИ КОМПАНИИ</h4>
+            <ul class="news-list">
+            </ul>
+            <a class="all-news-link" href="#">Все новости</a>
+        </div>
+        <!--Правая часть  -->
+        <div class="news-and-slider__right">
+            <div class="news-and-slider__right__cool-text"><b>БОЛЕЕ 2000 ТОВАРОВ</b> ОТ 40+ ПРОИЗВОДИТЕЛЕЙ В ОДНОМ МАГАЗИНЕ. <span class="news-and-slider__right__cool-text__blue">ЛЮБЫЕ РЕШЕНИЯ "ПОД КЛЮЧ"</span></div>
+            <div class="news-and-slider__right__slides">
+            </div>
+        </div>
+    </section>
+    <section class="products-list-new">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>НОВИНКИ</strong><a href="#"><img class="blue-button" src="images/blue_button.jpg" alt="blue button"></a></div>
+            <div class="line-with-text__r"><a href="#">Все новинки</a></div>
+        </div>
+        <div class="products-list-new__items"></div>
+    </section>
+    <section class="products-list-recommended">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>РЕКОМЕНДУЕМ</strong><a href="#"><img class="blue-button" src="images/blue_button.jpg" alt="blue button"></a></div>
+            <div class="line-with-text__r"><a href="#">Все рекомендации</a></div>
+        </div>
+        <div class="products-list-recommended__items"></div>
+    </section>
+    <section class="products-list-sale">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>РАСПРОДАЖА</strong><a href="#"><img class="blue-button" src="images/blue_button.jpg" alt="blue button"></a></div>
+            <div class="line-with-text__r"><a href="#">Все товары</a></div>
+        </div>
+        <div class="products-list-sale__items"></div>
+    </section>
+    <section class="promos">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>АКЦИИ</strong><a href="#"><img class="blue-button" src="images/blue_button.jpg" alt="blue button"></a></div>
+            <div class="line-with-text__r"><a href="#">Все акции</a></div>
+        </div>
+        <div class="promosWrapper"></div>
+    </section>
+    <!--Блок "Что покупают прямо сейчас"-->
+    <section class="buying">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>ЧТО ПОКУПАЮТ ПРЯМО СЕЙЧАС</strong></div>
+        </div>
+        <div class="buying__items"></div>
+    </section>
+    <!--Блок "Наши ключевые бренды"-->
+    <section class="key-brands">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>НАШИ КЛЮЧЕВЫЕ БРЕНДЫ</strong></div>
+            <div class="line-with-text__r"><a href="#">Все бренды</a></div>
+        </div>
+        <div class="key-brands__wrapper">
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/samsung_logo.png" alt="samsung logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/escene_logo.png" alt="panasonic logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/siemens_logo.png" alt="siemens logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/panasonic_logo.png" alt="fanvil logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/fanvil_logo.png" alt="escene logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/yealink_logo.png" alt="yealink logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/openvox_logo.jpg" alt="openvox logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/pantel_logo.jpg" alt="pantel logo"></a></div>
+            <div class="key-brands__wrapper__brand-logo"><a href="#"><img src="images/brand_logos/nsgate_logo.jpg" alt="nsgate logo"></a></div>
+        </div>
+    </section>
+    <!--Блок "Наши сильные стороны"-->
+    <section class="strengths">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>НАШИ СИЛЬНЫЕ СТОРОНЫ</strong></div>
+        </div>
+        <div class="strengths__icons">
+            <div class="strengths__icons__items">
+                <div class="strengths__icons__items__logo"><img src="images/strengths_icons/message_icon.png" alt="message icon"></div>
+                <div class="strengths__icons__items__text"><b>ГРАМОТНАЯ КОНСУЛЬТАЦИЯ ПО КАЖДОМУ ТОВАРУ</b></div>
+            </div>
+            <div class="strengths__icons__items">
+                <div class="strengths__icons__items__logo"><img src="images/strengths_icons/pay_icon.png" alt="pay icon"></div>
+                <div class="strengths__icons__items__text"><b>ЛЮБЫЕ СПОСОБЫ ОПЛАТЫ</b></div>
+            </div>
+            <div class="strengths__icons__items">
+                <div class="strengths__icons__items__logo"><img src="images/strengths_icons/tools_icon.png" alt="tools icon"></div>
+                <div class="strengths__icons__items__text"><b>СОБСТВЕННЫЙ СЕРВИСНЫЙ ЦЕНТР</b></div>
+            </div>
+            <div class="strengths__icons__items">
+                <div class="strengths__icons__items__logo"><img src="images/strengths_icons/pickpoint_icon.png" alt="pickpoint icon"></div>
+                <div class="strengths__icons__items__text"><b>РАЗВЕТВЛЕННАЯ СЕТЬ САМОВЫВОЗА (PICKPOINT)</b></div>
+            </div>
+        </div>
+    </section>
+    <!--Блок "5 причин выбрать нашу компанию"-->
+    <section class="five-reasons">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>5 ПРИЧИН ВЫБРАТЬ НАШУ КОМПАНИЮ</strong></div>
+        </div>
+        <div class="five-reasons__wrapper">
+            <div class="five-reasons__bad">
+                <div class="five-reasons__bad__head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 357"><polygon points="357 35.7 321.3 0 178.5 142.8 35.7 0 0 35.7 142.8 178.5 0 321.3 35.7 357 178.5 214.2 321.3 357 357 321.3 214.2 178.5"></polygon></svg>
+                    <b>С ЧЕМ СТАЛКИВАЮТСЯ КЛИЕНТЫ В 85% СЛУЧАЕВ, КОГДА ОБРАЩАЮТСЯ К НАШИМ КОНКУРЕНТАМ?</b>
+                </div>
+                <div class="five-reasons__bad__ul">
+                    <ul>
+                        <li><span><b>1.5 беглых менеджера</b> по продажам со своим сайтом, имитирующие торговую компанию.</span></li>
+                        <li><span><b>Торговля серым, несертифицированным товаром</b>, что выливается в проблемы при гарантийном обслуживании.</span></li>
+                        <li><span><b>Менеджеры по продажам знакомы с оборудованием лишь на бумаге,</b> часто не знают, что они продают.</span></li>
+                        <li><span><b>Компании занимаются только продажей,</b> не проводят установку и настройку оборудования под ключ. Не оказывают техподдержку.</span></li>
+                        <li><span><b>Сложная процедура гарантийного ремонта</b> и возврата товара в случае проблем. Не понятно, куда обращаться по гарантии.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="five-reasons__good">
+                <div class="five-reasons__good__head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.8 448.8"><polygon points="142.8 323.9 35.7 216.8 0 252.5 142.8 395.3 448.8 89.3 413.1 53.6"></polygon></svg>
+                    <b>КАКОЙ СЕРВИС ПРЕДЛОЖИМ ВАМ МЫ?</b>
+                </div>
+                <div class="five-reasons__good__ul">
+                    <ul>
+                        <li><span><b>Открытая компания</b> с полным штатом профильных специалистов.</span></li>
+                        <li><span>Торговля оборудованием, пришедшим в РФ <b>исключительно через официальные поставки.</b></span></li>
+                        <li><span><b>Мы прекрасно понимаем,</b> что за оборудование продаем. Можем проконсультировать по функционалу, либо подобрать аналог.</span></li>
+                        <li><span><b>Оказываем полный комплекс услуг</b> по технической поддержке клиентов, а также проводим установку и настройку силами своего IT подразделения.</span></li>
+                        <li><span><b>Мы имеем собственный сервисный центр,</b> который осуществляет гарантийный ремонт оборудования.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Блок "Мы в цифрах"-->
+    <section class="we-in-numbers">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>МЫ В ЦИФРАХ</strong></div>
+        </div>
+        <div class="we-in-numbers__items">
+            <div class="we-in-numbers__items__wrap">
+                <div class="we-in-numbers__items__wrap__number"><span class="we-in-numbers__items__wrap__number__orange">10</span></div>
+                <div class="we-in-numbers__items__wrap__text"><b>10 ЛЕТ НА РЫНКЕ</b></div>
+            </div>
+            <div class="we-in-numbers__items__wrap">
+                <div class="we-in-numbers__items__wrap__number"><span class="we-in-numbers__items__wrap__number__blue">25/5</span></div>
+                <div class="we-in-numbers__items__wrap__text"><b>25 ПРОФИЛЬНЫХ<br> СПЕЦИАЛИСТОВ, 5<br> МЕНЕДЖЕРОВ ОТДЕЛА<br> ПРОДАЖ</b></div>
+            </div>
+            <div class="we-in-numbers__items__wrap">
+                <div class="we-in-numbers__items__wrap__number" id="big_number"><span class="we-in-numbers__items__wrap__number__orange">2222<br>х<br>100</span></div>
+                <div class="we-in-numbers__items__wrap__text"><b>2222 ТОВАРА<br> В КАТАЛОГЕ<br> СРЕДИ 100 БРЕНДОВ</b></div>
+            </div>
+            <div class="we-in-numbers__items__wrap">
+                <div class="we-in-numbers__items__wrap__number"><span class="we-in-numbers__items__wrap__number__blue">29</span></div>
+                <div class="we-in-numbers__items__wrap__text"><b>29 ТОРГОВЫХ <br>ПАРТНЕРОВ</b></div>
+            </div>
+            <div class="we-in-numbers__items__wrap">
+                <div class="we-in-numbers__items__wrap__number"><span class="we-in-numbers__items__wrap__number__orange">14</span></div>
+                <div class="we-in-numbers__items__wrap__text"><b>14 ОТГРУЗОК В СУТКИ</b></div>
+            </div>
+            <div class="we-in-numbers__items__wrap">
+                <div class="we-in-numbers__items__wrap__number"><span class="we-in-numbers__items__wrap__number__blue">1</span></div>
+                <div class="we-in-numbers__items__wrap__text"><b>1 ИЗ ЛИДЕРОВ РЫНКА</b></div>
+            </div>
+        </div>
+    </section>
+    <!--Блок "Как с нами работать"-->
+    <section class="how-to-work-with-us">
+        <div class="line-with-text">
+            <hr/>
+            <div class="line-with-text__l"><strong>КАК С НАМИ РАБОТАТЬ?</strong></div>
+        </div>
+        <ul class="how-to-work-with-us__types">
+            <li id="how-to-work-with-us__types__active"><b>В РОЗНИЦУ</b></li>
+            <li><b>ОПТОВИКАМ</b></li>
+            <li><b>ПАРТНЕРАМ</b></li>
+            <li><b>ПОКУПАЯ С НАСТРОЙКОЙ</b></li>
+        </ul>
+        <div class="how-to-work-with-us_instruction">
+            <div class="how-to-work-with-us__instruction__point">
+                <img class="how-to-work-with-us__instruction__point__left-image" src="images/how-to-work_icons/phone_icon.png" alt="phone icon">
+                <p><b>1.</b> Обращение через<br> сайт/по телефону</p>
+            </div>
+            <div class="how-to-work-with-us__instruction__point">
+                <img class="how-to-work-with-us__instruction__point__left-image" src="images/how-to-work_icons/check-mark_icon.png" alt="check mark">
+                <b>2.</b> Подтверждение <br>заказа
+            </div>
+            <div class="how-to-work-with-us__instruction__point">
+                <img class="how-to-work-with-us__instruction__point__left-image" src="images/how-to-work_icons/car_icon.png" alt="car icon">
+                <b>3.</b> Доставка <br>товара
+            </div>
+            <div class="how-to-work-with-us__instruction__point">
+                <img class="how-to-work-with-us__instruction__point__left-image" src="images/how-to-work_icons/purse_icon.png" alt="pursue icon">
+                <b>4.</b>Оплата товара при получении, либо предоплата <br>по безналичному расчету<br>до п. 3
+            </div>
+        </div>
+    </section>
+    <!--Блок "Инфо"-->
+    <div class="line-with-text">
+        <hr/>
+    </div>
+    <section class="info">
+        <p>Интернет магазин Хомиру поможет вам в выборе оборудования для <br><a href="#">IP телефонии</a> - которая активно используется как в бизнесе для общения с клиентами, партнёрами, поставщиками и инвесторами по всему миру, так и в повседневной жизни, для разговоров с друзьями и близкими в других городах. Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая цена соединения. Звонок в регион, расположенный за несколько тысяч километров от вас, может обойтись намного дешевле, чем разговор по сотовому телефону в пределах города.</p>
+        <p id="no-margin">Для <a href="#">подключения к услугам IP-телефонии</a> требуется только стабильный выход в интернет и устройство коммуникации, например, компьютер с гарнитурой или ip телефон.</p>
+        <p>Наш магазин айпи телефонии Homy предлагает <a href="#">полный спектр решений</a> для бизнеса и частных лиц в сфере организации современной связи (в том числе Skype телефоны и SIP телефоны). IP телефоны очень просты в использовании, так как применяется привычный всем, практически естественный интерфейс обычного телефона. Для работы с ним не требуется каких-либо специальных навыков или дополнительных операций: достаточно просто выполнить подключение и <a href="#">конфигурирование устройства</a> и положить его на то место, где ранее лежал ваш городской телефон. С этого момента вы и ваши сотрудники можете свободно пользоваться дешевой и защищённой связью.</p>
+    </section>
+</div>
+<div class="service__mobile">
+    <ul>
+        <li>
+            Доставка и оплата
+            <img src="images/white_arrow.png" alt="white arrow">
+        </li>
+        <li>
+            Гарантии и возврат
+            <img src="images/white_arrow.png" alt="white arrow">
+        </li>
+        <li>
+            Техподдержка
+            <img src="images/white_arrow.png" alt="white arrow">
+        </li>
+        <li>
+            Контакты
+            <img src="images/white_arrow.png" alt="white arrow">
+        </li>
+    </ul>
+</div>
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__wrapper__logo">
+            <a href="index.html" class="footer__wrapper__logo__link">HO<span class="my_bg">MY</span>RU</a><br>
+            <span class="footer__slogan">ОБОРУДОВАНИЕ И РЕШЕНИЯ ДЛЯ VOIP</span><br>
+            <br>
+            <p>@ХомиРу, 2006-2016<br></p>
+            <p>Перепечатка материалов возможна<br>
+                только с активной ссылкой на homy.ru</p>
+        </div>
+        <div class="footer__wrapper__address">
+            <p>г. Москва, Зеленоград,<br>
+            Панфиловский пр., дом 8, строение 1</p>
+            <a href="#" class="map">Схема проезда</a>
+        </div>
+        <div>
+            <ul class="footer__wrapper__services">
+                <li>Доставка и оплата</li>
+                <li>Гарантии и возврат</li>
+                <li>Техподдержка</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+        <div class="footer__wrapper__contacts">
+            <p><span class="phone_number">+7 495 2-55-44-66</span></p>
+            <p><span class="smaller work-hours">(пн-пт с 9 до 18ч)</span></p>
+            <div class="footer__wrapper__contacts__messengers">
+                <img src="images/whatsapp_icon.png" alt="whatsapp icon">
+                <img src="images/viber_icon.png" alt="viber icon">
+                <span class="smaller">+7 903 111-11-11</span>
+                <br>
+                <img src="images/skype_icon.png" alt="skype icon">
+                <span class="smaller">skype-on.06</span>
+                <br>
+                <a href="#"><span class="smaller">info@homy.ru</span></a>
+                <br>
+                <br>
+                <br>
+                <img class="social" src="images/vk_icon.jpg" alt="vk icon">
+                <img class="social" src="images/facebook_icon.jpg" alt="facebook icon">
+                <img class="social" src="images/twitter_icon.jpg" alt="twitter icon">
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="lower-footer">
+    <div class="wrapper">
+        <p>Все описания и характеристики товаров носят информационный характер и могут отличаться от представленных в технической документации производителей. Уточняйте информацию у наших менеджеров.</p>
+        <img class="stats" src="images/stats.png" alt="stats">
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/config.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/sliders.js"></script>
+</body>
+</html>
